@@ -26,7 +26,6 @@ namespace App.Middlewares
                     Code = context.Response.StatusCode,
                     Message = e.Message
                 });
-
             }
         }
 

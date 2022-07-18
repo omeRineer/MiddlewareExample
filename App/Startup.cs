@@ -47,6 +47,8 @@ namespace App
 
             app.UseExceptionMiddleware();
 
+            app.UseFileLogMiddleware();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

@@ -9,5 +9,10 @@ namespace App.Extension
         {
             return applicationBuidler.UseMiddleware<ExceptionHandlerMiddleware>();
         }
+
+        public static IApplicationBuilder UseFileLogMiddleware(this IApplicationBuilder applicationBuidler)
+        {
+            return applicationBuidler.UseMiddleware<FileLogMiddleware>();
+        }
     }
 }
